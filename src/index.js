@@ -17,7 +17,7 @@ const createIncompleteElement = (text) => {
   const p = document.createElement("p");
   p.innerText = text;
   const completeButton = document.createElement("button");
-  completeButton.innerText = "完";
+  completeButton.innerText = "完了";
 
   completeButton.addEventListener("click", () => {
     deleteFromList(deleteButton.parentNode.parentNode, "incomplete-list");
